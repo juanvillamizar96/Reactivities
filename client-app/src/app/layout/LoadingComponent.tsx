@@ -7,8 +7,9 @@ const LoadingComponent: React.FC<{ inverted?: boolean; content?: string }> = ({
 }) => {
   return (
     <Dimmer active inverted={inverted}>
-      <img src='../../assets/spinner.gif' alt='loading' />
-      <Loader content={content}></Loader>
+      <Loader content={content}>
+        <img src='../../assets/spinner.gif' alt='loading' />
+      </Loader>
     </Dimmer>
   );
 };
