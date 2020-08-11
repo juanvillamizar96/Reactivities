@@ -2,8 +2,6 @@ import { observable, action, computed } from 'mobx';
 import { createContext, SyntheticEvent } from 'react';
 import { IActivity } from '../models/activity';
 import agent from '../api/agent';
-import { ENGINE_METHOD_STORE } from 'constants';
-import { throws } from 'assert';
 
 class ActivityStore {
   @observable activityRegistry = new Map();
