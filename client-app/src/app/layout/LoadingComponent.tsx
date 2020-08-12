@@ -2,14 +2,13 @@ import React from 'react';
 import { Dimmer, Loader } from 'semantic-ui-react';
 
 const LoadingComponent: React.FC<{ inverted?: boolean; content?: string }> = ({
-  inverted = true,
+  inverted = false,
   content,
 }) => {
   return (
     <Dimmer active inverted={inverted}>
-      <Loader content={content}>
-        <img src='../../assets/spinner.gif' alt='loading' />
-      </Loader>
+      <Loader content={content} />
+      <img src='../../assets/spinner.gif' alt='loading' />
     </Dimmer>
   );
 };
