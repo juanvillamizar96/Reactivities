@@ -14,8 +14,6 @@ const NotFound = () => {
           Return to Activities page
         </Button>
       </Segment.Inline>
-      <h1></h1>
-      <img src='../../assets/spinner.gif' alt='loading' />
     </Segment>
   );
 };
